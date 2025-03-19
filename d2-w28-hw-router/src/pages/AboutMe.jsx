@@ -10,8 +10,8 @@ const AboutMe = () => {
 
   return (
     <div>
-      <h1>About Me</h1>
-      <p>Бұл өзім туралы біраз ақпарат...</p>
+      <h1>Мен тұралы</h1>
+      <p>Мен Насыров Эфрат Азатович. Амжилт мектебінде 24/2 тобының студентімінюһ. Қазір REACT тілін үйреніп жатырмыню</p>
       <button onClick={handleClick}>Go to My Profile</button>
     </div>
   );

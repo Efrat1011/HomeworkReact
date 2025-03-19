@@ -19,7 +19,7 @@ function App() {
           <Route path='/profile' element={<MyProfile/>}/>
           <Route path='/project' element={<MyProject/>}/>
           <Route path='/about' element={<AboutMe/>}/>
-          <Route path='/'element={<NotFound/>}/>
+          <Route path='/about'element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     
