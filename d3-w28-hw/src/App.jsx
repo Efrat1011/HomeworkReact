@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import Navbar from './compones/NavBar';
 import Home from './pages/Home';
 import Project from './pages/Project';
@@ -8,7 +8,7 @@ import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -16,7 +16,7 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetail/>}/>
         <Route path="/about" element={<AboutMe/>}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
