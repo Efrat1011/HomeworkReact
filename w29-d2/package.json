@@ -1,5 +1,5 @@
 {
-  "name": "d2-w27-hw",
+  "name": "w29-d2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.8.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
