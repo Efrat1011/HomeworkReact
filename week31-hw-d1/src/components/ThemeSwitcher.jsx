@@ -1,6 +1,10 @@
 import React, { useReducer } from 'react';
 
-
+// let initialState = {
+//   color:'white',
+//   color:'black',
+//   color:'blue',
+// }
 const themeReducer = (state, action) => {
   switch (action.type) {
     case 'Aq tus':
@@ -15,12 +19,12 @@ const themeReducer = (state, action) => {
 };
 
 export default function  ThemeSwitcher ()  {
-  const [theme, dispatch] = useReducer(themeReducer, 'aq');
+  const [state, dispatch] = useReducer(themeReducer, '');
 
   return (
     <div
       style={{
-        backgroundColor: theme,
+        backgroundColor: state,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -29,7 +33,7 @@ export default function  ThemeSwitcher ()  {
         
       }}
     >
-      <h1>Current theme: {theme}</h1>
+      <h1>Current theme: {state}</h1>
       <div >
         <button onClick={() => dispatch({ type: 'Aq tus' })}>White</button>
         <button onClick={() => dispatch({ type: 'Kara tus' })}>Black</button>
